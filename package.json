@@ -1,0 +1,68 @@
+{
+  "name": "escape-dev",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.3",
+    "@tanstack/react-query": "^5.66.5",
+    "@testing-library/react": "^16.2.0",
+    "@types/uuid": "^9.0.7",
+    "@wagmi/core": "^2.16.4",
+    "@wert-io/module-react-component": "2.1.3",
+    "@wert-io/widget-initializer": "6.3.2",
+    "@wert-io/widget-sc-signer": "2.0.1",
+    "axios": "^1.8.1",
+    "buffer": "^6.0.3",
+    "cra-template": "1.2.0",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.1",
+    "crypto-js": "^4.2.0",
+    "ethers": "^5.6.9",
+    "i18next": "^24.2.2",
+    "jest": "^27.5.1",
+    "jquery": "^3.7.1",
+    "motion": "^12.4.2",
+    "preact": "^10.26.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
+    "react-owl-carousel": "^2.3.3",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.3",
+    "react-toastify": "^11.0.5",
+    "slick-carousel": "^1.8.1",
+    "stream-browserify": "^3.0.0",
+    "swiper": "^11.2.2",
+    "tailwind-scrollbar": "^4.0.1",
+    "uuid": "^8.3.2",
+    "wagmi": "^2.14.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

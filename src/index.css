@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+@font-face {
+  font-family: 'SDGlitchDemo';
+  src: url('./assets/font/SDGlitchDemo.ttf') format('truetype');
+}
+.ff_SDGlitchDemo {
+  font-family: 'SDGlitchDemo', sans-serif;
+}
+
+/* .zoom-container {
+  transform: scale(0.9);
+  transform-origin: top left;
+  width: 111.11%;
+}
+
+@supports (zoom: 90%) {
+  .zoom-container {
+    zoom: 90%;
+  }
+} */
+
+/* Input Number Defaut Arrow Remove */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #02af08;
+  border-radius: 10px;
+}

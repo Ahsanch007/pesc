@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Fuzzy Bubbles', serif;
+  background-color: #0e0f10;
+  max-width: 2000px;
+  margin: auto;
+}
+
+/* Default background for home page */
+.bg_home {
+  background-image: url('./assets/img/home-bg.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Background for about page */
+.bg_home2 {
+  background-image: url('./assets/gif/bg.gif');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+/* Background for FAQ page */
+.bg_home3 {
+  background-image: url('./assets/img/home-bg3.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.slick-next {
+  background-image: url('./assets/img/right-arrow.svg') !important;
+  right: -10px !important;
+}
+
+.slick-prev {
+  background-image: url('./assets/img/left-arrow.svg') !important;
+  left: -20px !important;
+}
+
+.slick-prev,
+.slick-next {
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  width: 70px !important;
+  height: 70px !important;
+  z-index: 11;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  content: '' !important;
+}
+
+.slick-disabled {
+  display: none !important;
+}
+
+@media (max-width: 1600px) {
+  .slick-prev,
+  .slick-next {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
