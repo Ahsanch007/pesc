@@ -33,7 +33,7 @@ export default function HomeWelcomeCard() {
         </span>
       </div>
       <div className="bg-white px-4 md:px-6 lg:px-4 py-3">
-        <div className="rounded-3xl p-4 space-y-4 overflow-hidden text-justify">
+        <div className="rounded-3xl  space-y-4  text-justify">
           {HowToBuyData.map((data, index) => (
             <div
               key={index}
@@ -43,7 +43,7 @@ export default function HomeWelcomeCard() {
                 className="flex items-center justify-between gap-4 bg-[#136FFF] border-2 border-black rounded-2xl shadow-[2px_4px_0px_0px_#000] p-3 cursor-pointer "
                 onClick={() => handleToggle(index)}
               >
-                <h4 className="text-white text-lg md:text-2xl xl:text-[32px] font-bold uppercase !leading-[100%]">
+                <h4 className="text-white text-lg  2xl:text-[32px] font-bold uppercase !leading-[100%]">
                   {t(data.que)}
                 </h4>
                 <span
@@ -55,7 +55,7 @@ export default function HomeWelcomeCard() {
                 </span>
               </div>
               {openIndex === index && (
-                <div className="w-[95%]  mx-auto bg-[#000000] text-sm text-white sm:text-base rounded-b-2xl shadow-[2px_4px_0px_0px_#000] border-[3px] md:border-4 border-black border-dashed border-t-0 mt-1 p-2 sm:p-4 ">
+                <div className="w-[95%]  mx-auto bg-[#000000] text-sm text-white 2xl:text-base rounded-b-2xl shadow-[2px_4px_0px_0px_#000] border-[3px] md:border-4 border-black border-dashed border-t-0 mt-1 p-2 sm:p-4 ">
                   <p>{t(data.ans)}</p>
                 </div>
               )}

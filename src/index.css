@@ -2,10 +2,12 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
+
 @font-face {
   font-family: 'SDGlitchDemo';
   src: url('./assets/font/SDGlitchDemo.ttf') format('truetype');
 }
+
 .ff_SDGlitchDemo {
   font-family: 'SDGlitchDemo', sans-serif;
 }
@@ -28,6 +30,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 input[type='number'] {
   -moz-appearance: textfield;
 }
@@ -47,4 +50,11 @@ input[type='number'] {
 ::-webkit-scrollbar-thumb {
   background: #02af08;
   border-radius: 10px;
+}
+
+
+.bgBanner {
+  background-image: url('../src/assets/img/home-bg2.webp');
+  background-position: center;
+  background-size: cover;
 }

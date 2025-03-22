@@ -104,7 +104,7 @@ export default function Layout({ children }) {
   switch (hash) {
     case '':
     case 'home':
-      divClass = 'hidden w-full lg:max-w-[250px] xl:max-w-[450px] lg:block absolute left-[330px] bottom-10 -translate-x-1/2 overflow-hidden';
+      divClass = 'hidden w-full lg:max-w-[250px] xl:max-w-[450px] lg:block absolute left-[230px] bottom-40 2xl:bottom-10 -translate-x-1/2 overflow-hidden';
       pieceClass = [
         'w-full lg:max-w-[80px] xl:max-w-[100px] lg:block absolute left-[28%] bottom-[30%] -translate-x-1/2',
         'w-full lg:max-w-[150px] xl:max-w-[180px] lg:block absolute xl:left-[77%] bottom-0 -translate-x-1/2'
@@ -175,7 +175,7 @@ export default function Layout({ children }) {
     return 'bg_home'; // Default background class
   };
   return (
-    <div className={` bg-cover bg-center ${bgClass}`}>
+    <div className={` bgBanner`}>
      {/* <div className={`min-h-screen 2xl:min-h-[1000px] bg-cover bg-center`}> */}
       {/*<img src={bgVideo} alt="Character" className="absolute top-0 left-0 w-full h-full object-cover -z-20" />*/}
       <Header text={t('flow_text')} />

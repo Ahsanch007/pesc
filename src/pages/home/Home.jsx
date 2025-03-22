@@ -30,7 +30,7 @@ export default function Home() {
         </motion.h1>
       </div>
       <div className="">
-        <div className='scale-75 mx-[70px] mt-[30px]'>
+        <div className='scale-75 2xl:mx-[70px] mt-[30px]'>
           <StackedCards />
         </div>
         <div className='mt-[100px] 2xl:scale-75'>
