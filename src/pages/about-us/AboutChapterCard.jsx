@@ -33,14 +33,14 @@ export default function AboutChapterCard({ chapterName, chapterTitle, chapterCon
       
      
       {/* Chapter Title */}
-      <h2 className="w-full text-white text-4xl lg:text-5xl xl:text-6xl ff_SDGlitchDemo text-left uppercase !leading-[60%] ml-5 mb-5 xl:mb-7">
+      <h2 className="w-full  text-white text-4xl lg:text-5xl xl:text-6xl ff_SDGlitchDemo text-left uppercase !leading-[60%] ml-5 mb-5 xl:mb-7">
         {chapterName}
       </h2>
 
       {/* Chapter Content Card */}
-      <div className="bg-white rounded-[32px] overflow-hidden border-4 border-black shadow-[3px_4px_0px_0px_#02AF08] m-1 max-w-full lg:max-w-[350px] xl:max-w-[800px] mx-auto">
+      <div className="bg-white rounded-[32px] overflow-hidden border-4 border-black shadow-[3px_4px_0px_0px_#02AF08] m-1 max-w-full  mx-auto">
         <div className="bg-[#02AF08] border-b-[6px] border-black flex justify-between items-center gap-4 px-2 md:px-6 lg:px-8 py-2 md:py-4 lg:py-5">
-          <h3 className="text-white ff_SDGlitchDemo text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] uppercase !leading-[100%]">
+          <h3 className="text-white  ff_SDGlitchDemo text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[38px] uppercase !leading-[100%]">
             {chapterTitle}
           </h3>
           <span className="shrink-0 w-full max-w-10 sm:max-w-12 md:max-w-16 lg:max-w-20 xl:max-w-24">

@@ -53,8 +53,14 @@ input[type='number'] {
 }
 
 
-.bgBanner {
+/* .bgBanner {
   background-image: url('../src/assets/img/home-bg2.webp');
   background-position: center;
   background-size: cover;
+} */
+
+.bgBanner {
+  background-position: center;
+  background-size: cover;
+
 }

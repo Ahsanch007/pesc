@@ -26,12 +26,31 @@ import mobileBg from './../assets/gif/bg.gif';
 import { useTranslation } from 'react-i18next';
 
 
+const backgrounds = {
+  "#home": "/img/home-bg2.webp",
+  "#about-us": "/img/home-bg.webp",
+  "#about-us2": "/img/mobile_3.jpg",
+};
 
 export default function Layout({ children }) {
   const [bgImage, setBgImage] = useState(mobileBg);
   const { t } = useTranslation();
   const location = useLocation();
   const hash = location.hash.replace('#', '');
+
+  const [bgImages, setBgImages] = useState(backgrounds[window.location.hash] || backgrounds["#home"]);
+
+  useEffect(() => {
+    const updateBackground = () => {
+      setBgImages(backgrounds[window.location.hash] || backgrounds["#home"]);
+    };
+
+    window.addEventListener("hashchange", updateBackground);
+
+    return () => {
+      window.removeEventListener("hashchange", updateBackground);
+    };
+  }, []);
 
   useEffect(() => {
     const updateBg = () => {
@@ -175,9 +194,9 @@ export default function Layout({ children }) {
     return 'bg_home'; // Default background class
   };
   return (
-    <div className={` bgBanner`}>
-     {/* <div className={`min-h-screen 2xl:min-h-[1000px] bg-cover bg-center`}> */}
-      {/*<img src={bgVideo} alt="Character" className="absolute top-0 left-0 w-full h-full object-cover -z-20" />*/}
+    <div className="bgBanner overflow-hidden"
+    style={{ backgroundImage: `url(${bgImages})` }}>
+    
       <Header text={t('flow_text')} />
       <div className="relative">
 
